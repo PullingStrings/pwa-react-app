@@ -5,20 +5,6 @@ const fullScreenStyle = {
   opacity: 0.6
 };
 
-// //creates images array with keys
-// const images = require.context('../images', false, /\.(png|jpe?g|svg)$/);
-// const keys = images.keys();
-// const imgArr = keys.map(key => images(key));
-//
-// //loops through the images
-// const imagesArrays = keys.map(image => {
-//   console.log(keys);
-//   return <img key={keys} src={require(`../images/${image}`)} alt=''/>;
-// });
-// function importAll(r) {
-//   return r.keys().map(r);
-// }
-
 function importAll(r) {
   const images = {};
   r.keys().map((item) => {

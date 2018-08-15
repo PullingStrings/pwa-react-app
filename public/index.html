@@ -24,18 +24,7 @@
     <div id="root" class="container"></div>
 
     <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
-    <script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCHhU2aYYYSnwNd2Jk-hT0rsfmZ8glq02w",
-    authDomain: "react-pwa-app-3c4f6.firebaseapp.com",
-    databaseURL: "https://react-pwa-app-3c4f6.firebaseio.com",
-    projectId: "react-pwa-app-3c4f6",
-    storageBucket: "react-pwa-app-3c4f6.appspot.com",
-    messagingSenderId: "301603244058"
-  };
-  firebase.initializeApp(config);
-</script>
+
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
@@ -51,7 +40,7 @@
         console.log('Service Worker is not supported by browser.');
       }
     </script>
-    
+
     <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i></i></a></div>
   </body>
 </html>

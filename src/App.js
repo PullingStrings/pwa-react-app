@@ -3,6 +3,7 @@
 import React, { Component } from 'react';
 import Navbar from './Components/Navbar';
 import Slideshow from './Components/Slideshow';
+import Workprojects from './Components/Workprojects';
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
             </div>
           </div>
         </section>
+        <Workprojects />
       </div>
     );
   }

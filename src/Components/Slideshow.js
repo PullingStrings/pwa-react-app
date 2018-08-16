@@ -14,7 +14,6 @@ function importAll(r) {
 }
 
 const images = importAll(require.context('../images', false, /\.(png|jpe?g|svg)$/));
-console.log(images);
 
 
 export default class Slideshow extends Component {
@@ -39,7 +38,7 @@ export default class Slideshow extends Component {
                       <div className="mbr-overlay"
                         style={fullScreenStyle}>
                       </div>
-                      <img src={images['laptop.jpg']} alt="couch laptop" />
+                      <img src={require('../images/laptop.jpg')} alt='laptop' />
                       <div className="carousel-caption justify-content-center">
                         <div className="col-10 align-center">
                           <h2 className="mbr-fonts-style display-1">Sibusiso Tito Zwane</h2>
@@ -55,7 +54,7 @@ export default class Slideshow extends Component {
                     <div className="image_wrapper">
                       <div className="mbr-overlay">
                       </div>
-                      <img src={images['playing.jpg']} alt='' />;
+                      <img src={require('../images/playing.jpg')} alt='' />;
                       <div className="carousel-caption justify-content-center">
                         <div className="col-10 align-left">
                           <h2 className="mbr-fonts-style display-1">Sibusiso Tito Zwane</h2>
@@ -66,16 +65,32 @@ export default class Slideshow extends Component {
                   </div>
                 </div>
                 <div className="carousel-item slider-fullscreen-image" data-bg-video-slide="false"
-                  style={{backgroundImage: `url(${images['speacking.jpg']})`}}>
+                  style={{backgroundImage: `url(${images['full-scan-full-edit-1870x1100.jpg']})`}}>
                   <div className="container container-slide">
                     <div className="image_wrapper">
                       <div className="mbr-overlay">
                       </div>
-                      <img src={images['specking.jpg']} alt='' />;
+                      <img src={images['full-scan-full-edit-1870x1100.jpg']} alt='bikes' />;
                       <div className="carousel-caption justify-content-center">
                         <div className="col-10 align-left">
                           <h2 className="mbr-fonts-style display-1">Sibusiso Tito Zwane</h2>
                           <p className="lead mbr-text mbr-fonts-style display-5">Art &nbsp; lover.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="carousel-item slider-fullscreen-image" data-bg-video-slide="false"
+                  style={{backgroundImage: `url(${images['specking.jpg']})`}}>
+                  <div className="container container-slide">
+                    <div className="image_wrapper">
+                      <div className="mbr-overlay">
+                      </div>
+                      <img src={images['specking.jpg']} alt='presenting' />;
+                      <div className="carousel-caption justify-content-center">
+                        <div className="col-10 align-left">
+                          <h2 className="mbr-fonts-style display-1">Sibusiso Tito Zwane</h2>
+                          <p className="lead mbr-text mbr-fonts-style display-5">World Traveller</p>
                         </div>
                       </div>
                     </div>

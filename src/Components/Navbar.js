@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
-import Blog from './Blog/LandingPage';
+// import Home from './Components/Port';
+// import Blog from './Components/LandingPage';
+
+
 
 export default class Navbar extends Component {
   render() {
@@ -37,17 +39,6 @@ export default class Navbar extends Component {
                 </li>
                 <li className="nav-item"><a className="nav-link link text-white display-4" href="#bottom">Contact</a>
                 </li>
-                <Router>
-                  <div>
-                    <li className="nav-item"><Link
-                      className="nav-link link text-white display-4"
-                      to="/blog">Blog</Link></li>
-                    <Route
-                      className="nav-link link text-white display-4"
-                      path="/blog"
-                      component={Blog} />
-                  </div>
-                </Router>
               </ul>
             </div>
           </nav>

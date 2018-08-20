@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+
+// import Home from '../Components/Port';
+// import Blog from '../Components/LandingPage';
+// import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
 const fullScreenStyle = {
   opacity: 0.6
 };
@@ -340,7 +345,7 @@ export default class Port extends Component {
           <div className="container">
             <div className="media-container-row">
               <div className="mbr-figure pr-lg-5"
-                style={{width: '85%;'}}>
+                style={{width: '85%'}}>
                 <img src={require('../images/profile-picture-600x450.png')} alt="profile" />
               </div>
               <div className="media-content px-3 align-self-center mbr-white py-2">

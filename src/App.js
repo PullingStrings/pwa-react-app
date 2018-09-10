@@ -1,7 +1,7 @@
 // App.js
 
 import React, { Component } from 'react';
-import Navbar from './Components/Navbar';
+// import Navbar from './Components/Navbar';
 // import Port from './Components/Port';
 import Home from './Components/Port';
 import Blog from './Components/LandingPage';
